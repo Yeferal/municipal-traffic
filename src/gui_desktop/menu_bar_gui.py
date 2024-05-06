@@ -101,7 +101,7 @@ def build_menu_bar(parent):
             dpg.add_menu_item(label="Guardar Como", callback=save_as_model, tag="save_as")
             dpg.add_menu_item(label="Guardar Modelo", callback=save_model, tag="save", shortcut="Ctrl + S")
 
-        dpg.add_menu_item(label="Cerrar Programa", callback=close_program)
+        # dpg.add_menu_item(label="Cerrar Programa", callback=close_program)
 
 
     with dpg.file_dialog(directory_selector=False, show=False, callback=on_file_selected, id="file_dialog_tag", width=700,
